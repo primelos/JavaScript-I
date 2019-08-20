@@ -1,7 +1,8 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. 
+//Create an object for each person in the company list:
 
 // 1, mmelloy0@psu.edu, Mitzi, F
 // 2, kdiben1@tinypic.com, Kennan, M
@@ -18,6 +19,13 @@ const example = {
 }
 
 // Write your intern objects here:
+const dataBase = [
+  {id: 0, name: "Mitzi", email: "mmelloy0@psu.edu", gender: "F"},
+  {id: 2, name: "Kennan", email: "kdiben1@tinypic.com", gender: "M"},
+  {id: 3, name: "Keven", email: "kmummery2@wikimedia.org", gender: "M"},
+  {id: 4, name: "Gannie", email: "gmartinson3@illinois.edu", gender: "M"},
+  {id: 5, name: "Antonietta", email: "adaine5@samsung.com", gender: "F"}
+]
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -41,6 +49,21 @@ const example = {
 //console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
+
+
+console.log(dataBase[0].name)
+
+console.log(dataBase[1].id)
+
+console.log(dataBase[2].email)
+
+console.log(dataBase[3].name)
+
+console.log(dataBase[4].gender)
+
+
+
+
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 

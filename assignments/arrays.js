@@ -140,5 +140,6 @@ for (let m = 0; m < inventory.length; m++){
   if (inventory[m].car_make === "BMW" || inventory[m].car_make === "Audi")
     BMWAndAudi.push(inventory[m])
 }
-
+const myJSON = JSON.stringify(BMWAndAudi)
 console.log(BMWAndAudi);
+console.log(myJSON)

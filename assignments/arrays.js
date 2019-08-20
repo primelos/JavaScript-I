@@ -100,19 +100,23 @@ let carModels = [];
 let carModelsSorted = [];
 
 for (let k = 0; k < inventory.length; k++){
-  carModels += carModels.push(inventory[k].car_model);
-  // carModelsSorted.push(carModels);
-  // carModelsSorted.sort();
-  
-  // carModelsSorted.sort()
-  console.log(carModelsSorted);
+  carModels = inventory[k].car_model; 
+  carModelsSorted.push(carModels);
+  carModelsSorted.sort();
 }
+console.log(carModelsSorted)
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the 
 //car years and log the result in the console.
 let carYears = [];
-console.log();
+
+for (let i = 0; i < inventory.length; i++){
+  carYears.push(inventory[i]["car_year"]);
+  
+}
+console.log(carYears);
 
 
 
@@ -120,10 +124,21 @@ console.log();
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created,
 // find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars = [];
-console.log();
+for (let u = 0; u < carYears.length; u++){
+  
+  if (carYears[u] < 2000){
+    oldCars.push(carYears[u]);
+  }
+}
+console.log(oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.
 //  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+for (let m = 0; m < inventory.length; m++){
+  if (inventory[m].car_make === "BMW" || inventory[m].car_make === "Audi")
+    BMWAndAudi.push(inventory[m])
+}
+
+console.log(BMWAndAudi);
